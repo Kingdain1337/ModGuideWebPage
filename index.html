@@ -16,6 +16,7 @@
     .num{width:40px;height:40px;border-radius:8px;background:linear-gradient(180deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;color:#052033;font-weight:700}
     .step h2{margin:0;font-size:15px}
     .step p{margin:6px 0;color:var(--muted);font-size:14px}
+    .step-img{max-width:100%;height:auto;display:block;margin-top:8px;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
     a.link{color:var(--accent);text-decoration:none}
     code.inline{background:#071c2a;padding:2px 6px;border-radius:6px;color:#bde7ff;font-size:13px}
     .note{font-size:13px;color:#ffd580;background:rgba(255,210,120,0.06);padding:8px;border-radius:8px}
@@ -58,6 +59,7 @@
         <div>
           <h2>Install Fabric profile in TLauncher</h2>
           <p>Open TLauncher, enter your username (bottom left), choose the Minecraft version <code class="inline">fabric-1.21.10</code> from the versions dropdown, and click <strong>Install</strong>.</p>
+          <img id="step3-img" class="step-img" src="Tlauncer_setup_guide.png" alt="TLauncher Fabric install screenshot" />
         </div>
       </li>
 
@@ -68,6 +70,8 @@
           <p>Download the modpack archive from my Google Drive and copy the three folders into the Fabric profile folder that TLauncher opens when you press the folder icon (bottom right).</p>
           <p><a class="link" href="https://drive.google.com/drive/folders/1sSeTISpq6JhvLQP5QvruRq_EFUr3RD_Y?usp=sharing" target="_blank" rel="noopener">Google Drive: mods / resourcepacks / shaders</a></p>
           <p>Replace any conflicting folders. The client-side only files (shaders, client-only mods) should remain in the client; server mods go on the server (see server doc).</p>
+          <img id="step4one-img" class="step-img" src="TlauncerFile.PNG" alt="TLauncher Fabric install screenshot" />
+          <img id="step4two-img" class="step-img" src="CopyToFolder.PNG" alt="TLauncher Fabric install screenshot" />
         </div>
       </li>
 
@@ -89,14 +93,6 @@
         </div>
       </li>
     </ol>
-
-    <footer>
-      <div class="actions">
-        <a class="btn" href="#">Print / Save as PDF</a>
-        <a class="btn" href="#">Download HTML</a>
-      </div>
-      <p style="margin-top:12px">If you want, I can produce a downloadable HTML file or a PDF export of this page you can host or send to friends. I can also add troubleshooting steps, screenshots, or a server-side install checklist.</p>
-    </footer>
   </main>
 </body>
 </html>
