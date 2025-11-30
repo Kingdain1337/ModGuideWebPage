@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minecraft Fabric Setup — Quick One‑Page Guide</title>
+  <style>
+    :root{--bg:#0f1115;--card:#0f1720;--muted:#9aa4b2;--accent:#7dd3fc;--accent2:#60a5fa}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system,Segoe UI, Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#071226 0%, #071122 60%)}
+    .wrap{max-width:880px;margin:36px auto;padding:28px;background:rgba(255,255,255,0.02);border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6);}
+    header{display:flex;gap:16px;align-items:center}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    ol.steps{counter-reset:step;list-style:none;padding:0;margin:0}
+    .step{background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);padding:16px;border-radius:10px;margin-bottom:12px;display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start}
+    .num{width:40px;height:40px;border-radius:8px;background:linear-gradient(180deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;color:#052033;font-weight:700}
+    .step h2{margin:0;font-size:15px}
+    .step p{margin:6px 0;color:var(--muted);font-size:14px}
+    a.link{color:var(--accent);text-decoration:none}
+    code.inline{background:#071c2a;padding:2px 6px;border-radius:6px;color:#bde7ff;font-size:13px}
+    .note{font-size:13px;color:#ffd580;background:rgba(255,210,120,0.06);padding:8px;border-radius:8px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .btn{background:var(--accent);color:#052033;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    @media (max-width:640px){.wrap{margin:14px;padding:16px}} 
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>Minecraft Fabric Setup — Quick One‑Page Guide</h1>
+        <p class="lead">Follow these numbered steps in order. This guide assumes you are using the provided mods, resource packs and Velocity proxy (proxy IP: <code class="inline">34.35.146.5:25566</code>).</p>
+      </div>
+    </header>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="num">1</div>
+        <div>
+          <h2>Download and install TLauncher</h2>
+          <p>Get TLauncher from the official site and run the installer.</p>
+          <p><a class="link" href="https://tlauncher.org" target="_blank" rel="noopener">https://tlauncher.org</a></p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="num">2</div>
+        <div>
+          <h2>Install Java 25 (Windows x64)</h2>
+          <p>Download Java 25 from Oracle's archive and run the Windows x64 installer by double‑clicking it.</p>
+          <p><a class="link" href="https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html</a></p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="num">3</div>
+        <div>
+          <h2>Install Fabric profile in TLauncher</h2>
+          <p>Open TLauncher, enter your username (bottom left), choose the Minecraft version <code class="inline">fabric-1.21.10</code> from the versions dropdown, and click <strong>Install</strong>.</p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="num">4</div>
+        <div>
+          <h2>Copy mods, resource packs & shaders</h2>
+          <p>Download the modpack archive from my Google Drive and copy the three folders into the Fabric profile folder that TLauncher opens when you press the folder icon (bottom right).</p>
+          <p><a class="link" href="https://drive.google.com/drive/folders/1sSeTISpq6JhvLQP5QvruRq_EFUr3RD_Y?usp=sharing" target="_blank" rel="noopener">Google Drive: mods / resourcepacks / shaders</a></p>
+          <p>Replace any conflicting folders. The client-side only files (shaders, client-only mods) should remain in the client; server mods go on the server (see server doc).</p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="num">5</div>
+        <div>
+          <h2>Set memory and run</h2>
+          <p>In TLauncher: <strong>Settings → Minecraft settings</strong> and set Memory allocation to <code class="inline">6–8 GB</code> depending on your system. Then press <strong>Play</strong>.</p>
+        </div>
+      </li>
+
+      <li class="step">
+        <div class="num">6</div>
+        <div>
+          <h2>Add the server and connect</h2>
+          <p>Open <strong>Multiplayer → Add Server</strong>, give it a name and use this address:</p>
+          <p><code class="inline">34.35.146.5:25566</code></p>
+          <p>Save and join. If you have trouble connecting, check that your client Fabric profile matches server Fabric version.</p>
+        </div>
+      </li>
+    </ol>
+
+    <footer>
+      <div class="actions">
+        <a class="btn" href="#">Print / Save as PDF</a>
+        <a class="btn" href="#">Download HTML</a>
+      </div>
+      <p style="margin-top:12px">If you want, I can produce a downloadable HTML file or a PDF export of this page you can host or send to friends. I can also add troubleshooting steps, screenshots, or a server-side install checklist.</p>
+    </footer>
+  </main>
+</body>
+</html>
